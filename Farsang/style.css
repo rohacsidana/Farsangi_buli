@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap%27);
+
+*{
+    font-family: 'Jost', sans-serif;
+    
+}
+
+
+/*Navigacio*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+  }
+  .navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+  }
+  .navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+  }
+  .logo a{
+      text-decoration: none;
+      color: white;
+  } 
+
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "n n n n" 
+                         "a a a as"
+                         "f f f f";
+    
+}
+
+body {
+    background-color: rgb(233, 224, 241);
+
+}
+
+main,
+header,
+nav,
+aside,
+article,
+footer,
+section {
+    border: 1px solid black;
+}
+main{
+    height: 1920px;
+    width: 1080px;
+}
+
+header {
+    grid-area: h;
+    background-color: rgb(117, 123, 200);
+    text-align: center;
+}
+
+header h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+header img {
+    width: 1000px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    grid-area: n;
+}
+
+aside {
+    grid-area: as;
+    background-color: rgb(255, 214, 255);
+    padding: 15px;
+}
+
+.szemelyesaside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.video {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article {
+    grid-area: a;
+    background-color: rgb(224, 195, 252);
+}
+
+article h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+    background-color: rgb(187, 173, 255);
+}
+
+
+/*Navigacio*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(177, 136, 239);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+
+/*Űrlap article*/
+
+.opciok {
+    margin-left: 15%;
+    margin-right: 25%;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    margin-left: 15%;
+    display: flex;
+}
+
+.form-row input[type='text'] {
+    background-color: rgb(251, 228, 255);
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 40%;
+    padding: 7px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.form-row label {
+    margin-bottom: 15px;
+}
+
+.form-row input[type='tel'] {
+    margin-left: 20px;
+    background-color: rgb(251, 228, 255);
+    border: 1px solid black;
+    width: 40%;
+}
+
+.form-row input[type='email'] {
+    margin-left: 20px;
+    background-color: rgb(251, 228, 255);
+    border: 1px solid black;
+    width: 40%;
+}
+
+select {
+    margin-left: 20px;
+    background-color: rgb(251, 228, 255);
+    border: 1px solid black;
+}
+
+input[type=submit] {
+    width: 50%;
+    color: white;
+    padding: 14px 20px;
+    background-color: rgb(171, 113, 235);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+input[type=submit]:hover {
+    background-color: plum;
+}
+
+
+/*Reszponzivitás */
+
+@media screen and(max-width: 600px) {
+    main {
+        width: 100%;
+        grid-template-areas: "h" "n" "a" "as" "f";
+    }
+}
