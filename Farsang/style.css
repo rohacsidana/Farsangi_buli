@@ -83,10 +83,6 @@ header h1 {
   text-transform: uppercase;
 }
 
-header img {
-  width: 1000px;
-}
-
 .container {
   position: relative;
   text-align: center;
