@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, article, aside, nav {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "h h"
+                         "a as";
+    width: 80%;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+header {
+    grid-area: h;
+    text-align: center;
+}
+
+article {
+    grid-area: a;
+}
+
+aside {
+    grid-area: as;
+}
+
+article, aside {
+    text-align: center;
+    display: grid;
+    grid-template-areas: "x c"
+                         "x f";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: solid 1px blue;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+   background-color: rgb(65, 65, 255);
+}
+
+article>h2, aside>h2 {
+    grid-area: c;
+}
+
+form {
+    grid-area: f;
+    margin-bottom: 20px;
+}
+
+form>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+form>div>label, form>div>input {
+    margin-bottom: 5px;
+}
+
+footer {
+    grid-area: f;
+}
+
+body {
+    background: url(kepek/hatter.jpg);
+}
+
+@media screen and (max-width:700px) {
+    
+    main {
+        grid-template-areas: "h"
+                             "a"
+                             "as";
+    }
+}
